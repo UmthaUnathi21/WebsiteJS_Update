@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+
+<div id="content">
+    <h1>Welcome to My Portfolio</h1>
+    <p>
+        My name is Umtha-Unathi Mavuso, I am a Game designer, web developer and your friendly neighbourhood Spiderman.
+        <img src="images/file.png" alt="Spidey Logo" width="20" height="20"> 
+    </p> 
+    <p>
+        This website showcases some of my work and thoughts in various areas.
+    </p>
+
+    <img src="images/OldMan Coding.gif" alt="OldMan coding" width="524" height="276">
+
+    <p>
+        Explore my <a href="./html/blogpage.html">Blog</a>, check out my <a href="./html/portfolio.html">Portfolio</a>, or view my <a href="./html/design.html">Designs</a>.
+    </p>
+    
+</div>
+
+<footer>
+    <p>Contact me at:</p>
+    <p>E-mail: umthaoupa@gmail.com</p>
+    <p>Contact no: 0745809483</p>
+    <p>GitHub: UmthaUnathi21</p>
+</footer>
+
+<script>
+    // Redirect function for clicking on links
+    function redirectToPage(page) {
+        window.location.href = page;
+    }
+    
+    // Add event listeners to links
+    document.querySelector('a[href="blog.html"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        redirectToPage('blog.html');
+    });
+    
+    document.querySelector('a[href="portfolio.html"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        redirectToPage('portfolio.html');
+    });
+    
+    document.querySelector('a[href="design.html"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        redirectToPage('design.html');
+    });
+</script>
+
+</body>
+</html>
